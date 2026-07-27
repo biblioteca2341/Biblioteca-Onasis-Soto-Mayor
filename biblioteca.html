@@ -103,7 +103,6 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
     <div class="htitle"><h1>Biblioteca Virtual</h1><p>Onasis Soto Mayor</p></div>
     <div class="swrap"><input type="text" id="si" placeholder="Buscar por título o autor..."></div>
     <div class="hcount">Mostrando <span id="cs">0</span> de <span id="ct">0</span></div>
-    <button class="hhelp" onclick="openHelp()">? Cómo usar</button>
   </div>
 </header>
 <div class="layout">
@@ -136,6 +135,7 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
     <div class="fg"><label>Nacionalidad</label><select id="fn"><option value="">Todas</option><option>Alemana</option><option>Americana</option><option>Angolana</option><option>Argentina</option><option>Austriaca</option><option>Brasilera</option><option>Canadiense</option><option>Checa</option><option>Chilena</option><option>China</option><option>Colombiana</option><option>Cubana</option><option>Escocesa</option><option>Española</option><option>Finlandesa</option><option>Francesa</option><option>Griega</option><option>Guatemalteca</option><option>Húngara</option><option>India</option><option>Inglesa</option><option>Irlandesa</option><option>Israelí</option><option>Italiana</option><option>Japonesa</option><option>Martinicana</option><option>Mexicana</option><option>Moldava</option><option>Nigeriana</option><option>Otra</option><option>Peruana</option><option>Polaca</option><option>Portuguesa</option><option>Rusa</option><option>Sueca</option><option>Surcoreana</option><option>Uruguaya</option></select></div>
     <div class="fg"><label>Formato del archivo</label><select id="fmt"><option value="">Todos</option><option>DOC</option><option>DOCX</option><option>EPUB</option><option>MOBI</option><option>PDF</option><option>RTF</option></select></div>
     <button class="breset" onclick="reset()">Limpiar filtros</button>
+    <button class="breset" onclick="openHelp()" style="margin-top:.5rem;border-color:#c47a4a;color:#7a4a10">? Cómo usar la biblioteca</button>
   </aside>
   <main>
     <div class="bh"><h2><strong id="cl">0</strong> libros</h2><select class="ss" id="srt" onchange="render()"><option value="t">Título A–Z</option><option value="a">Autor A–Z</option><option value="nd">Más reciente</option><option value="na">Más antiguo</option></select></div>
