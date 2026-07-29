@@ -156,7 +156,7 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
     <div class="msinopsis" id="msin" style="display:none"></div>
     <div class="mb" id="mb"></div>
     <div class="mf">
-      <a href="#" id="md" target="_blank" class="bdll">📥 Acceder al archivo</a>
+      <a href="#" id="md" target="_blank" class="bdll">📥 Descargar</a>
       <div class="calibre-note" id="calibre-note" style="display:none">
         ¿El formato no es compatible con tu dispositivo? 
         <a href="https://calibre-ebook.com" target="_blank">Calibre</a> es gratuito y convierte entre todos los formatos.
@@ -263,7 +263,7 @@ function render(){
       </div>
       <div class="cfoot">
         <span class="cano">${b.ano||''}</span>
-        ${b.link?`<a href="${b.link}" target="_blank" class="bdl" onclick="event.stopPropagation()">📥 Abrir</a>`:''}
+        ${b.link?`<a href="${b.link}" target="_blank" class="bdl" onclick="event.stopPropagation()">📥 Descargar</a>`:''}
       </div>
     </div>`;
   }).join('');
