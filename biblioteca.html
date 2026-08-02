@@ -264,7 +264,7 @@ function render(){
     const fm=b.forma?`<span class="tag">${b.forma}</span>`:'';
     const idx=B.indexOf(b);
     return`<div class="card" onclick="om(${idx})">
-      <div class="cover">
+      <div class="cover" style="background:linear-gradient(135deg,${c1},${c2})">
         <span class="sig">${String(idx+1).padStart(3,'0')}</span>
         <span class="stamp ${b.ficcion==='No Ficción'?'nf':''}">${b.ficcion==='Ficción'?'Ficción':'No Ficción'}</span>
         ${fl?`<span class="flag">${fl}</span>`:''}
