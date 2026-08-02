@@ -9,27 +9,27 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{color-scheme:light;--bg:#f7f4ef;--surface:#fff;--surface2:#f0ebe3;--border:#e2d9ce;--text:#1a1410;--text2:#5c4f42;--text3:#9c8b7a;--accent:#1a4f7a;--accent-h:#2a6fa0;--orange:#c47a4a;--orange-h:#a85f35;--shadow:0 2px 12px rgba(0,0,0,.07);--shadow-h:0 8px 28px rgba(0,0,0,.13)}
-body{font-family:'Inter',sans-serif;background:#f7f4ef !important;color:#1a1410 !important;min-height:100vh}
-header{background:#1a1410;color:#f7f4ef;padding:1.25rem 1.5rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.3)}
+body{font-family:'Inter',sans-serif;background:#C8DCC0 !important;color:#1a1410 !important;min-height:100vh}
+header{background:#3D6B3D;color:#f0f8f0;padding:1.25rem 1.5rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.2)}
 .hi{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
-.htitle h1{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#f7f4ef}
-.htitle p{font-size:.72rem;color:#9c8b7a;margin-top:.15rem;letter-spacing:.06em;text-transform:uppercase}
+.htitle h1{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#f0f8f0}
+.htitle p{display:none}
 .swrap{flex:1;min-width:180px;position:relative}
-#si{width:100%;padding:.6rem 1rem;border:2px solid var(--orange);border-radius:8px;background:#3a2010;color:#f7f4ef;font-family:'Inter',sans-serif;font-size:.88rem;outline:none;transition:border-color .2s,background .2s}
-#si::placeholder{color:#c4956a}
-#si:focus{border-color:#e09060;background:#4a2a18}
-.hcount{font-size:.78rem;color:#9c8b7a;white-space:nowrap}
-.hcount span{color:var(--orange);font-weight:600}
-.hhelp{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#f7f4ef;font-family:'Inter',sans-serif;font-size:.8rem;cursor:pointer;border-radius:6px;padding:.4rem .75rem;white-space:nowrap;transition:background .2s}
+#si{width:100%;padding:.6rem 1rem;border:2px solid #6A9A5A;border-radius:8px;background:#ffffff;color:#1a3000;font-family:'Inter',sans-serif;font-size:.88rem;outline:none;transition:border-color .2s,background .2s}
+#si::placeholder{color:#7aaa7a}
+#si:focus{border-color:#3D6B3D;background:#f0f8f0}
+.hcount{font-size:.78rem;color:#f0f8f0;white-space:nowrap;font-weight:600}
+.hcount span{color:#c8f0c8;font-weight:700}
+.hhelp{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#f0f8f0;font-family:'Inter',sans-serif;font-size:.8rem;cursor:pointer;border-radius:6px;padding:.4rem .75rem;white-space:nowrap;transition:background .2s}
 .hhelp:hover{background:rgba(255,255,255,.2)}
 .layout{max-width:1400px;margin:0 auto;padding:1.5rem;display:grid;grid-template-columns:230px 1fr;gap:1.75rem;align-items:start}
-.filters{background:#f5f0e8 !important;border-radius:12px;border:1px solid #d4c9b8 !important;padding:1.2rem;position:sticky;top:90px;color:#1a1410 !important}
+.filters{background:#D8EDD0 !important;border-radius:12px;border:1px solid #6A9A5A !important;padding:1.2rem;position:sticky;top:90px;color:#1a3000 !important}
 .filters h2{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:600;margin-bottom:.9rem;padding-bottom:.6rem;border-bottom:1px solid var(--border)}
-.fg{margin-bottom:.9rem}.fg label{color:#5c4f42 !important}.fg select{color:#1a1410 !important;background:#fff !important}.filters h2{color:#1a1410 !important}.breset{color:#5c4f42 !important;background:#e8e0d0 !important;border-color:#c4b8a8 !important}
+.fg{margin-bottom:.9rem}.fg label{color:#2a5020 !important}.fg select{color:#1a3000 !important;background:#D8EDD0 !important;border-color:#6A9A5A !important}.filters h2{color:#1a3000 !important;border-bottom-color:#6A9A5A !important}.breset{color:#1a3000 !important;background:#B8D8A8 !important;border-color:#6A9A5A !important}
 .fg label{display:block;font-size:.67rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:.4rem}
 /* Toggle buttons for Ficción/No Ficción */
 .ftoggle{display:flex;gap:.4rem}
-.ftoggle button{flex:1;padding:.45rem .3rem;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text2);font-family:'Inter',sans-serif;font-size:.78rem;cursor:pointer;transition:all .15s;font-weight:500}
+.ftoggle button{flex:1;padding:.6rem .3rem;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text2);font-family:'Inter',sans-serif;font-size:.88rem;cursor:pointer;transition:all .15s;font-weight:600}
 .ftoggle button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 .ftoggle button:first-child.active{background:#3a5c3a;border-color:#3a5c3a}
 .ftoggle button:last-child.active{background:#3a3f6a;border-color:#3a3f6a}
@@ -266,7 +266,7 @@ function render(){
     const idx=B.indexOf(b);
     return`<div class="card" onclick="om(${idx})">
       <div class="cover">
-        <span class="sig">${String(idx+1).padStart(3,'0')}</span>
+        
         <span class="stamp ${b.ficcion==='No Ficción'?'nf':''}">${b.ficcion==='Ficción'?'Ficción':'No Ficción'}</span>
         ${fl?`<span class="flag">${fl}</span>`:''}
       </div>
