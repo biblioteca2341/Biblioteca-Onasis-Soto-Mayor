@@ -46,14 +46,14 @@ header{background:#3D6B3D;color:#f0f8f0;padding:1.25rem 1.5rem;position:sticky;t
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:1.1rem}
 .card{background:var(--surface);border-radius:12px;border:1px solid var(--border);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;cursor:pointer}
 .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-h)}
-.cover{height:155px;display:flex;align-items:center;justify-content:center;position:relative;padding:.9rem;background:#e8e0d0}
-.ctit-cover{font-family:'Playfair Display',serif;font-size:.88rem;font-weight:700;color:#2a1a08;text-align:center;line-height:1.35;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.cover{height:100px;display:flex;align-items:center;justify-content:center;position:relative;padding:.7rem;background:#e8e0d0}
+.ctit-cover{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#1a1410;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .flag{position:absolute;top:6px;right:6px;font-size:24px !important;filter:drop-shadow(0 1px 3px rgba(0,0,0,.4));background:rgba(255,255,255,.85);border-radius:4px;padding:2px 4px;line-height:1.2;z-index:2}
 .fmt-badge{position:absolute;bottom:7px;left:7px;background:rgba(0,0,0,.38);color:#fff;font-size:.6rem;font-weight:600;letter-spacing:.06em;padding:.18rem .42rem;border-radius:4px;text-transform:uppercase}
 .cbody{padding:.8rem;flex:1;display:flex;flex-direction:column;gap:.25rem}
-.caut{font-size:.75rem;color:var(--text2);font-weight:500}
-.cmeta{display:flex;gap:.3rem;flex-wrap:wrap;margin-top:.2rem}
-.tag{font-size:.63rem;padding:.15rem .4rem;border-radius:4px;background:#f0e8de;color:var(--text2);font-weight:500;border:1px solid var(--border)}
+.caut{font-size:.88rem;color:var(--text2);font-weight:500;margin-top:.2rem}
+.cmeta{display:flex;gap:.3rem;flex-wrap:wrap;margin-top:.4rem}
+.tag{font-size:.6rem;padding:.1rem .35rem;border-radius:4px;background:#f0e8de;color:var(--text3);font-weight:500;border:1px solid var(--border)}
 .tf{background:#e8f0e8;border-color:#c8dac8;color:#3a5c3a}
 .tnf{background:#e8eaf4;border-color:#c8ccdc;color:#3a3f6a}
 .cfoot{padding:.6rem .8rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
@@ -97,8 +97,10 @@ header{background:#3D6B3D;color:#f0f8f0;padding:1.25rem 1.5rem;position:sticky;t
 footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border-top:1px solid var(--border);margin-top:2rem}
 @media(max-width:768px){.layout{grid-template-columns:1fr}.filters{position:static}.grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr))}header{padding:.9rem 1rem}.hi{gap:.7rem}}
 
-.stamp{position:absolute;bottom:7px;left:7px;font-family:'Courier Prime',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#2a1a08;border:1.5px solid rgba(42,26,8,.5);border-radius:2px;padding:2px 5px;transform:rotate(-2.5deg);white-space:nowrap;background:rgba(255,255,255,.7)}
+.stamp{position:absolute;bottom:7px;left:7px;font-family:'Courier Prime',monospace;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#2a1a08;border:1.5px solid rgba(42,26,8,.5);border-radius:2px;padding:3px 6px;transform:rotate(-2.5deg);white-space:nowrap;background:rgba(255,255,255,.7)}
 .stamp.nf{color:#3a5020;border-color:#3a5020}
+
+.pais{position:absolute;top:6px;right:6px;font-size:.6rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:rgba(255,255,255,.85);color:#2a1a08;border-radius:3px;padding:2px 5px;line-height:1.4}
 </style>
 </head>
 <body>
@@ -145,7 +147,7 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
     <div class="fg"><label>Nacionalidad</label><select id="fn"><option value="">Todas</option><option>Alemana</option><option>Americana</option><option>Angolana</option><option>Argentina</option><option>Austriaca</option><option>Brasilera</option><option>Canadiense</option><option>Checa</option><option>Chilena</option><option>China</option><option>Colombiana</option><option>Cubana</option><option>Escocesa</option><option>Española</option><option>Finlandesa</option><option>Francesa</option><option>Griega</option><option>Guatemalteca</option><option>Húngara</option><option>India</option><option>Inglesa</option><option>Irlandesa</option><option>Israelí</option><option>Italiana</option><option>Japonesa</option><option>Martinicana</option><option>Mexicana</option><option>Moldava</option><option>Nigeriana</option><option>Peruana</option><option>Polaca</option><option>Portuguesa</option><option>Rusa</option><option>Sueca</option><option>Surcoreana</option><option>Uruguaya</option><option>Otra</option></select></div>
     <div class="fg"><label>Formato del archivo</label><select id="fmt"><option value="">Todos</option><option>DOC</option><option>DOCX</option><option>EPUB</option><option>MOBI</option><option>PDF</option><option>RTF</option></select></div>
     <button class="breset" onclick="reset()">Limpiar filtros</button>
-    <button class="breset" onclick="openHelp()" style="margin-top:.5rem;border-color:#c47a4a;color:#7a4a10">? Cómo usar la biblioteca</button>
+    <button class="breset" onclick="openHelp()" style="margin-top:.5rem;border-color:#c47a4a;color:#7a4a10">Cómo usar la biblioteca</button>
   </aside>
   <main>
     <div class="bh"><h2><strong id="cl">0</strong> libros</h2><select class="ss" id="srt" onchange="render()"><option value="t">Título A–Z</option><option value="a">Autor A–Z</option><option value="nd">Más reciente</option><option value="na">Más antiguo</option></select></div>
@@ -169,7 +171,7 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
       <a href="#" id="md" target="_blank" class="bdll">📥 Acceder al archivo</a>
       <div class="calibre-note" id="calibre-note" style="display:none">
         ¿El formato no es compatible con tu dispositivo? 
-        <a href="https://calibre-ebook.com" target="_blank">Calibre</a> es gratuito y convierte entre todos los formatos.
+        <a href="https://calibre-ebook.com" target="_blank">Calibre</a> es un programa gratuito que te permite convertir archivos entre formatos (EPUB, PDF, MOBI) y leerlos en tu computadora.
       </div>
     </div>
   </div>
@@ -271,7 +273,7 @@ function render(){
       <div class="cover">
         
         <span class="stamp ${b.ficcion==='No Ficción'?'nf':''}">${b.ficcion==='Ficción'?'Ficción':'No Ficción'}</span>
-        ${fl?`<span class="flag">${fl}</span>`:''}
+        ${b.nacionalidad?`<span class="pais">${b.nacionalidad}</span>`:''}
       </div>
       <div class="cbody">
         <span class="ctit-cover">${b.titulo}</span>
@@ -380,7 +382,7 @@ af();
     <div class="fg"><label>Nacionalidad</label><select id="fn"><option value="">Todas</option><option>Alemana</option><option>Americana</option><option>Angolana</option><option>Argentina</option><option>Austriaca</option><option>Brasilera</option><option>Canadiense</option><option>Checa</option><option>Chilena</option><option>China</option><option>Colombiana</option><option>Cubana</option><option>Escocesa</option><option>Española</option><option>Finlandesa</option><option>Francesa</option><option>Griega</option><option>Guatemalteca</option><option>Húngara</option><option>India</option><option>Inglesa</option><option>Irlandesa</option><option>Israelí</option><option>Italiana</option><option>Japonesa</option><option>Martinicana</option><option>Mexicana</option><option>Moldava</option><option>Nigeriana</option><option>Peruana</option><option>Polaca</option><option>Portuguesa</option><option>Rusa</option><option>Sueca</option><option>Surcoreana</option><option>Uruguaya</option><option>Otra</option></select></div>
     <div class="fg"><label>Formato del archivo</label><select id="fmt"><option value="">Todos</option><option>DOC</option><option>DOCX</option><option>EPUB</option><option>MOBI</option><option>PDF</option><option>RTF</option></select></div>
     <button class="breset" onclick="reset()">Limpiar filtros</button>
-    <button class="breset" onclick="openHelp()" style="margin-top:.5rem;border-color:#c47a4a;color:#7a4a10">? Cómo usar la biblioteca</button>
+    <button class="breset" onclick="openHelp()" style="margin-top:.5rem;border-color:#c47a4a;color:#7a4a10">Cómo usar la biblioteca</button>
   </aside>
   <main>
     <div class="bh"><h2><strong id="cl">0</strong> libros</h2><select class="ss" id="srt" onchange="render()"><option value="t">Título A–Z</option><option value="a">Autor A–Z</option><option value="nd">Más reciente</option><option value="na">Más antiguo</option></select></div>
@@ -404,7 +406,7 @@ af();
       <a href="#" id="md" target="_blank" class="bdll">📥 Acceder al archivo</a>
       <div class="calibre-note" id="calibre-note" style="display:none">
         ¿El formato no es compatible con tu dispositivo? 
-        <a href="https://calibre-ebook.com" target="_blank">Calibre</a> es gratuito y convierte entre todos los formatos.
+        <a href="https://calibre-ebook.com" target="_blank">Calibre</a> es un programa gratuito que te permite convertir archivos entre formatos (EPUB, PDF, MOBI) y leerlos en tu computadora.
       </div>
     </div>
   </div>
@@ -505,7 +507,7 @@ function render(){
     return`<div class="card" onclick="om(${idx})">
       <div class="cover">
         <span class="ctit-cover">${b.titulo}</span>
-        ${fl?`<span class="flag">${fl}</span>`:''}
+        ${b.nacionalidad?`<span class="pais">${b.nacionalidad}</span>`:''}
         ${b.formato?`<span class="fmt-badge">${b.formato}</span>`:''}
       </div>
       <div class="cbody">
