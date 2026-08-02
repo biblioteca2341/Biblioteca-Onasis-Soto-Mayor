@@ -101,6 +101,8 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
 .stamp.nf{color:#3a5020;border-color:#3a5020}
 
 .pais{position:absolute;top:6px;right:6px;font-size:.6rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:rgba(255,255,255,.85);color:#2a1a08;border-radius:3px;padding:2px 5px;line-height:1.4}
+
+.bdl-group{display:flex;gap:4px;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -229,7 +231,31 @@ function toggleFic(v){
   af();
 }
 
-let fil=[...B];
+
+// Fusionar registros con mismo título+autor en uno con múltiples formatos
+function agrupar(arr){
+  const map=new Map();
+  arr.forEach(b=>{
+    const key=b.titulo+'|||'+b.autor;
+    if(map.has(key)){
+      const base=map.get(key);
+      if(b.link && b.formato){
+        base.formatos=base.formatos||[{formato:base.formato,link:base.link}];
+        base.formatos.push({formato:b.formato,link:b.link});
+      }
+    } else {
+      const entry={...b};
+      if(b.link && b.formato){
+        entry.formatos=[{formato:b.formato,link:b.link}];
+      }
+      map.set(key,entry);
+    }
+  });
+  return [...map.values()];
+}
+const BD=agrupar(B);
+let fil=[...BD];
+
 function af(){
   const s=document.getElementById('si').value.toLowerCase();
   const fp=document.getElementById('fp').value;
@@ -237,7 +263,7 @@ function af(){
   const fo=document.getElementById('fo').value;
   const fmt=document.getElementById('fmt').value;
   const ftema=document.getElementById('ftema').value;
-  fil=B.filter(b=>{
+  fil=BD.filter(b=>{
     if(s&&!b.titulo.toLowerCase().includes(s)&&!b.autor.toLowerCase().includes(s))return false;
     if(curFic&&b.ficcion!==curFic)return false;
     if(fp&&b.periodo!==fp)return false;
@@ -287,14 +313,18 @@ function render(){
       </div>
       <div class="cfoot">
         <span class="cano">${b.ano||''}</span>
-        ${b.link?`<a href="${b.link}" target="_blank" class="bdl" onclick="event.stopPropagation()">Abrir ↗</a>`:''}
+        <div class="bdl-group">
+        ${(b.formatos&&b.formatos.length>1)
+          ? b.formatos.map(f=>`<a href="${f.link}" target="_blank" class="bdl" onclick="event.stopPropagation()">${f.formato} ↗</a>`).join('')
+          : b.link?`<a href="${b.link}" target="_blank" class="bdl" onclick="event.stopPropagation()">Abrir ↗</a>`:''}
+        </div>
       </div>
     </div>`;
   }).join('');
 }
 
 function om(i){
-  const b=B[i];
+  const b=BD[i];
   const[c1,c2]=gc(b.nacionalidad);
   document.getElementById('mcover').style.background=`linear-gradient(135deg,${c1},${c2})`;
   document.getElementById('mt').textContent=b.titulo;
