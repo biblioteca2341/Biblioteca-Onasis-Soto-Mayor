@@ -8,8 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#f7f4ef;--surface:#fff;--surface2:#f0ebe3;--border:#e2d9ce;--text:#1a1410;--text2:#5c4f42;--text3:#9c8b7a;--accent:#1a4f7a;--accent-h:#2a6fa0;--orange:#c47a4a;--orange-h:#a85f35;--shadow:0 2px 12px rgba(0,0,0,.07);--shadow-h:0 8px 28px rgba(0,0,0,.13)}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+:root{color-scheme:light;--bg:#f7f4ef;--surface:#fff;--surface2:#f0ebe3;--border:#e2d9ce;--text:#1a1410;--text2:#5c4f42;--text3:#9c8b7a;--accent:#1a4f7a;--accent-h:#2a6fa0;--orange:#c47a4a;--orange-h:#a85f35;--shadow:0 2px 12px rgba(0,0,0,.07);--shadow-h:0 8px 28px rgba(0,0,0,.13)}
+body{font-family:'Inter',sans-serif;background:#f7f4ef !important;color:#1a1410 !important;min-height:100vh}
 header{background:#1a1410;color:#f7f4ef;padding:1.25rem 1.5rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.3)}
 .hi{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
 .htitle h1{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#f7f4ef}
@@ -272,9 +272,9 @@ function render(){
       </div>
       <div class="cbody">
         <span class="ctit-cover">${b.titulo}</span>
-        <div class="caut">${b.autor}${fl?' '+fl:''}</div>
+        <div class="caut">${b.autor}</div>
         <div class="cmeta">
-          ${b.nacionalidad?`<span>${b.nacionalidad}</span>`:''}
+          
           ${b.forma?`<span>${b.forma}</span>`:''}
           ${b.periodo?`<span>${b.periodo}</span>`:''}
           ${b.formato?`<span class="fmt-badge">${b.formato}</span>`:''}
