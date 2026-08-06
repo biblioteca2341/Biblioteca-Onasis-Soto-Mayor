@@ -277,6 +277,7 @@ function af(){
 }
 
 function render(){
+  window.scrollTo({top:0,behavior:"smooth"});
   const srt=document.getElementById('srt').value;
   const bks=[...fil].sort((a,b)=>{
     if(srt==='t')return a.titulo.localeCompare(b.titulo,'es');
@@ -289,12 +290,13 @@ function render(){
   document.getElementById('cl').textContent=bks.length;
   const g=document.getElementById('grid');
   if(!bks.length){g.innerHTML='<div class="empty"><p>📚</p><p>No se encontraron libros.</p></div>';return}
+  g.scrollTop=0;
   g.innerHTML=bks.map(b=>{
     const[c1,c2]=gc(b.nacionalidad);
     const fl=F[b.nacionalidad]||'';
     const ft=b.ficcion==='Ficción'?'<span class="tag tf">Ficción</span>':'<span class="tag tnf">No Ficción</span>';
     const fm=b.forma?`<span class="tag">${b.forma}</span>`:'';
-    const idx=B.indexOf(b);
+    const idx=BD.indexOf(b);
     return`<div class="card" onclick="om(${idx})">
       <div class="cover">
         
