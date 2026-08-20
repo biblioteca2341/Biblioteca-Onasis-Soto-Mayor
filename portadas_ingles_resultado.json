@@ -1,0 +1,695 @@
+﻿[
+    {
+        "titulo":  "The Canterbury Tales",
+        "autor":  "Geoffrey Chaucer",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1xW0CtmroL7Rb-Il1JTe35Gf_ib-qD7De",
+        "portada_id":  5767180,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/5767180-L.jpg"
+    },
+    {
+        "titulo":  "Hamlet",
+        "autor":  "William Shakespeare",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1S06j2sX3pBGF04Y_X-f-w0fwa3q772Aj",
+        "portada_id":  8281954,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8281954-L.jpg"
+    },
+    {
+        "titulo":  "King Lear",
+        "autor":  "William Shakespeare",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=10C8N_zK6t2lgc18PnHLeiZqCqfbPG5GJ",
+        "portada_id":  7420452,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/7420452-L.jpg"
+    },
+    {
+        "titulo":  "Macbeth",
+        "autor":  "William Shakespeare",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1r_qb5sS8wB1sDun0JJuisOVKOTJjBrgX",
+        "portada_id":  872432,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/872432-L.jpg"
+    },
+    {
+        "titulo":  "A Midsummer Night\u0027s Dream",
+        "autor":  "William Shakespeare",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1mO3XqIFqHxPOp4WbNL0JvNo6sEd8Qhle",
+        "portada_id":  null,
+        "portada_ol":  null
+    },
+    {
+        "titulo":  "The Tragical History of Doctor Faustus",
+        "autor":  "Christopher Marlowe",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=12qR2yOTnf4IcYNHhypXgh9QSMH3vQvNg",
+        "portada_id":  10617924,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/10617924-L.jpg"
+    },
+    {
+        "titulo":  "Paradise Lost",
+        "autor":  "John Milton",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1n3JdT0_kIgo57VCMkSJ9Dsn3L05cyhCd",
+        "portada_id":  5992814,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/5992814-L.jpg"
+    },
+    {
+        "titulo":  "The Pilgrim\u0027s Progress",
+        "autor":  "John Bunyan",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1QJy9KAOhdtLJj7vh8QuiPXIq8Hn96q10",
+        "portada_id":  10721258,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/10721258-L.jpg"
+    },
+    {
+        "titulo":  "The Life and Adventures of Robinson Crusoe",
+        "autor":  "Daniel Defoe",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1n5g8puY_L7UDef-Ko6I4Pai3V4CIrm5L",
+        "portada_id":  15005651,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/15005651-L.jpg"
+    },
+    {
+        "titulo":  "Gulliver\u0027s Travels",
+        "autor":  "Jonathan Swift",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1TDQPcs6cbFfrxbHhdWdvDxpJnlWS7Yrl",
+        "portada_id":  10526443,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/10526443-L.jpg"
+    },
+    {
+        "titulo":  "The History of Tom Jones, a Foundling",
+        "autor":  "Henry Fielding",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1IkY_AixI_VFVQq9IEA698uHWv1CCXlPi",
+        "portada_id":  null,
+        "portada_ol":  null
+    },
+    {
+        "titulo":  "The Life and Opinions of Tristram Shandy, Gentleman",
+        "autor":  "Laurence Sterne",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1NhGAgnUDleLKbEi7cFEZ8rmaygfODctU",
+        "portada_id":  5922052,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/5922052-L.jpg"
+    },
+    {
+        "titulo":  "A Vindication of the Rights of Woman",
+        "autor":  "Mary Wollstonecraft",
+        "link":  "https://standardebooks.org/ebooks/mary-wollstonecraft/a-vindication-of-the-rights-of-woman/downloads/mary-wollstonecraft_a-vindication-of-the-rights-of-woman.epub",
+        "portada_id":  339052,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/339052-L.jpg"
+    },
+    {
+        "titulo":  "The Vicar of Wakefield",
+        "autor":  "Oliver Goldsmith",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=17GfsQPtfPKXzmfPhVLaJiP947Khii0QB",
+        "portada_id":  6720851,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/6720851-L.jpg"
+    },
+    {
+        "titulo":  "The History of Rasselas, Prince of Abissinia",
+        "autor":  "Samuel Johnson",
+        "link":  "https://standardebooks.org/ebooks/samuel-johnson/the-history-of-rasselas/downloads/samuel-johnson_the-history-of-rasselas.epub",
+        "portada_id":  null,
+        "portada_ol":  null
+    },
+    {
+        "titulo":  "Poetry",
+        "autor":  "John Donne",
+        "link":  "https://standardebooks.org/ebooks/john-donne/poetry/downloads/john-donne_poetry.epub",
+        "portada_id":  8238738,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8238738-L.jpg"
+    },
+    {
+        "titulo":  "Pride and Prejudice",
+        "autor":  "Jane Austen",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1IUMY6WbgsGruNK2E5j5F_SJmOs3Oulfw",
+        "portada_id":  14348537,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/14348537-L.jpg"
+    },
+    {
+        "titulo":  "Emma",
+        "autor":  "Jane Austen",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=18mlMMMNLW2eqsv2e5ifb8emwXCcYmClT",
+        "portada_id":  9278312,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/9278312-L.jpg"
+    },
+    {
+        "titulo":  "Frankenstein",
+        "autor":  "Mary Shelley",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1_Yq5SO93azcmrAOG7_SwDIfj-NU8kGvf",
+        "portada_id":  12356249,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/12356249-L.jpg"
+    },
+    {
+        "titulo":  "Ivanhoe",
+        "autor":  "Walter Scott",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1GukRVRBkYNrHe4T25pXHxc3hyXdrxr_c",
+        "portada_id":  314235,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/314235-L.jpg"
+    },
+    {
+        "titulo":  "Confessions of an English Opium-Eater",
+        "autor":  "Thomas De Quincey",
+        "link":  "https://standardebooks.org/ebooks/thomas-de-quincey/confessions-of-an-english-opium-eater/downloads/thomas-de-quincey_confessions-of-an-english-opium-eater.epub",
+        "portada_id":  5780192,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/5780192-L.jpg"
+    },
+    {
+        "titulo":  "Narrative of the Life of Frederick Douglass",
+        "autor":  "Frederick Douglass",
+        "link":  "https://standardebooks.org/ebooks/frederick-douglass/narrative-of-the-life-of-frederick-douglass/downloads/frederick-douglass_narrative-of-the-life-of-frederick-douglass.epub",
+        "portada_id":  8247724,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8247724-L.jpg"
+    },
+    {
+        "titulo":  "Jane Eyre",
+        "autor":  "Charlotte Brontë",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1G8oNGKYqrn6ncOtxaM3NU1Grl_vCAzCL",
+        "portada_id":  8235363,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8235363-L.jpg"
+    },
+    {
+        "titulo":  "Wuthering Heights",
+        "autor":  "Emily Brontë",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1CjJ12BNJJq3If92fSYZjqx7SDnaaIxT9",
+        "portada_id":  12818862,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/12818862-L.jpg"
+    },
+    {
+        "titulo":  "Vanity Fair",
+        "autor":  "William Makepeace Thackeray",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1ss2ZIYrpf3lYkxED24OzfgaGHXGBNAtD",
+        "portada_id":  417329,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/417329-L.jpg"
+    },
+    {
+        "titulo":  "Uncle Tom\u0027s Cabin",
+        "autor":  "Harriet Beecher Stowe",
+        "link":  "https://standardebooks.org/ebooks/harriet-beecher-stowe/uncle-toms-cabin/downloads/harriet-beecher-stowe_uncle-toms-cabin.epub",
+        "portada_id":  null,
+        "portada_ol":  null
+    },
+    {
+        "titulo":  "Great Expectations",
+        "autor":  "Charles Dickens",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=10AGOvUN1vwIbSSaqO1bHnLd_cy1fRiJL",
+        "portada_id":  13322313,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/13322313-L.jpg"
+    },
+    {
+        "titulo":  "A Tale of Two Cities",
+        "autor":  "Charles Dickens",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1leHOmeR_npooOVJhtIUljAbRD6e4oprb",
+        "portada_id":  13301713,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/13301713-L.jpg"
+    },
+    {
+        "titulo":  "On Liberty",
+        "autor":  "John Stuart Mill",
+        "link":  "https://standardebooks.org/ebooks/john-stuart-mill/on-liberty/downloads/john-stuart-mill_on-liberty.epub",
+        "portada_id":  966821,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/966821-L.jpg"
+    },
+    {
+        "titulo":  "The Woman in White",
+        "autor":  "Wilkie Collins",
+        "link":  "https://standardebooks.org/ebooks/wilkie-collins/the-woman-in-white/downloads/wilkie-collins_the-woman-in-white.epub",
+        "portada_id":  4684227,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/4684227-L.jpg"
+    },
+    {
+        "titulo":  "Middlemarch",
+        "autor":  "George Eliot",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1l-kENASiu6WhqDEKKbBYDTEpIdFQvTDA",
+        "portada_id":  252882,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/252882-L.jpg"
+    },
+    {
+        "titulo":  "Alice\u0027s Adventures in Wonderland",
+        "autor":  "Lewis Carroll",
+        "link":  "https://standardebooks.org/ebooks/lewis-carroll/alices-adventures-in-wonderland/downloads/lewis-carroll_alices-adventures-in-wonderland.epub",
+        "portada_id":  null,
+        "portada_ol":  null
+    },
+    {
+        "titulo":  "Moby-Dick",
+        "autor":  "Herman Melville",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1-ZDfWY3VSHghP44abtFoiYnRJF3Gg2VS",
+        "portada_id":  10544254,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/10544254-L.jpg"
+    },
+    {
+        "titulo":  "The Scarlet Letter",
+        "autor":  "Nathaniel Hawthorne",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1-tJEHExC5O3nA623xecGNAdM-pHVbmSK",
+        "portada_id":  5654516,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/5654516-L.jpg"
+    },
+    {
+        "titulo":  "Walden",
+        "autor":  "Henry David Thoreau",
+        "link":  "https://standardebooks.org/ebooks/henry-david-thoreau/walden/downloads/henry-david-thoreau_walden.epub",
+        "portada_id":  11248037,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/11248037-L.jpg"
+    },
+    {
+        "titulo":  "Essays: First Series",
+        "autor":  "Ralph Waldo Emerson",
+        "link":  "https://standardebooks.org/ebooks/ralph-waldo-emerson/essays/downloads/ralph-waldo-emerson_essays.epub",
+        "portada_id":  6593538,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/6593538-L.jpg"
+    },
+    {
+        "titulo":  "Leaves of Grass",
+        "autor":  "Walt Whitman",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1J5kjjXUQONGo3dfiR-KHC38B96QBTgaO",
+        "portada_id":  9000447,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/9000447-L.jpg"
+    },
+    {
+        "titulo":  "Short Fiction",
+        "autor":  "Edgar Allan Poe",
+        "link":  "https://standardebooks.org/ebooks/edgar-allan-poe/short-fiction/downloads/edgar-allan-poe_short-fiction.epub",
+        "portada_id":  12621682,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/12621682-L.jpg"
+    },
+    {
+        "titulo":  "Adventures of Huckleberry Finn",
+        "autor":  "Mark Twain",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1E52zc-qBsGdQMqlPiFkPmOr0m0-Ijv8Y",
+        "portada_id":  8157718,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8157718-L.jpg"
+    },
+    {
+        "titulo":  "The Portrait of a Lady",
+        "autor":  "Henry James",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=10_glPGZGMeHPIqSwowz9CalIExZuqUIU",
+        "portada_id":  3352367,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/3352367-L.jpg"
+    },
+    {
+        "titulo":  "The Turn of the Screw",
+        "autor":  "Henry James",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1pBG_mLKgIzfuaRwoQvrTGz5pA-aT_F-m",
+        "portada_id":  181493,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/181493-L.jpg"
+    },
+    {
+        "titulo":  "Tess of the d\u0027Urbervilles",
+        "autor":  "Thomas Hardy",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1LvtiH7fWHQHb6cS3DnkB6wsYFv2Abpia",
+        "portada_id":  13109386,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/13109386-L.jpg"
+    },
+    {
+        "titulo":  "Treasure Island",
+        "autor":  "Robert Louis Stevenson",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1yT9PijHpZeURPyl9t1nxwJ3CSbB53-K2",
+        "portada_id":  13859660,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/13859660-L.jpg"
+    },
+    {
+        "titulo":  "The Strange Case of Dr Jekyll and Mr Hyde",
+        "autor":  "Robert Louis Stevenson",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1m18sK_J1ctF_02EDYDjSRbwWH5wCx5Yt",
+        "portada_id":  295773,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/295773-L.jpg"
+    },
+    {
+        "titulo":  "The Picture of Dorian Gray",
+        "autor":  "Oscar Wilde",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1Gf_wgAStALxnt8B4oUGzLqTnMgBU9V2E",
+        "portada_id":  14314858,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/14314858-L.jpg"
+    },
+    {
+        "titulo":  "The Importance of Being Earnest",
+        "autor":  "Oscar Wilde",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1awXAlIxUQG8vTP2AtKah22haJaA2GEB9",
+        "portada_id":  1260453,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/1260453-L.jpg"
+    },
+    {
+        "titulo":  "Dracula",
+        "autor":  "Bram Stoker",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1h2J20x-HsRUlufHqhMlMiLjuc_Kr8muh",
+        "portada_id":  12216503,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/12216503-L.jpg"
+    },
+    {
+        "titulo":  "The Hound of the Baskervilles",
+        "autor":  "Arthur Conan Doyle",
+        "link":  "https://standardebooks.org/ebooks/arthur-conan-doyle/the-hound-of-the-baskervilles/downloads/arthur-conan-doyle_the-hound-of-the-baskervilles.epub",
+        "portada_id":  8063264,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8063264-L.jpg"
+    },
+    {
+        "titulo":  "Barchester Towers",
+        "autor":  "Anthony Trollope",
+        "link":  "https://standardebooks.org/ebooks/anthony-trollope/barchester-towers/downloads/anthony-trollope_barchester-towers.epub",
+        "portada_id":  1468666,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/1468666-L.jpg"
+    },
+    {
+        "titulo":  "North and South",
+        "autor":  "Elizabeth Gaskell",
+        "link":  "https://standardebooks.org/ebooks/elizabeth-gaskell/north-and-south/downloads/elizabeth-gaskell_north-and-south.epub",
+        "portada_id":  8242253,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8242253-L.jpg"
+    },
+    {
+        "titulo":  "The Time Machine",
+        "autor":  "H.G. Wells",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1kCjCVQNOkjp6EeryQY6Y_TDWWm5bek46",
+        "portada_id":  9009316,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/9009316-L.jpg"
+    },
+    {
+        "titulo":  "The War of the Worlds",
+        "autor":  "H.G. Wells",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1MooGRqzDSXWEREjIMVRelEn1aDZsSLQX",
+        "portada_id":  36314,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/36314-L.jpg"
+    },
+    {
+        "titulo":  "The Jungle Book",
+        "autor":  "Rudyard Kipling",
+        "link":  "https://standardebooks.org/ebooks/rudyard-kipling/the-jungle-book/downloads/rudyard-kipling_the-jungle-book.epub",
+        "portada_id":  3344204,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/3344204-L.jpg"
+    },
+    {
+        "titulo":  "The Red Badge of Courage",
+        "autor":  "Stephen Crane",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1E2Gv5pWQ4_XzF5t8b5do4UFaTneTOHq_",
+        "portada_id":  8236915,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8236915-L.jpg"
+    },
+    {
+        "titulo":  "The Way of All Flesh",
+        "autor":  "Samuel Butler",
+        "link":  "https://standardebooks.org/ebooks/samuel-butler/the-way-of-all-flesh/downloads/samuel-butler_the-way-of-all-flesh.epub",
+        "portada_id":  14655106,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/14655106-L.jpg"
+    },
+    {
+        "titulo":  "New Grub Street",
+        "autor":  "George Gissing",
+        "link":  "https://standardebooks.org/ebooks/george-gissing/new-grub-street/downloads/george-gissing_new-grub-street.epub",
+        "portada_id":  5899760,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/5899760-L.jpg"
+    },
+    {
+        "titulo":  "Far from the Madding Crowd",
+        "autor":  "Thomas Hardy",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1XZVFIrz-qmTaqGpOv3wqI0RkGOhd3W33",
+        "portada_id":  902038,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/902038-L.jpg"
+    },
+    {
+        "titulo":  "Pragmatism",
+        "autor":  "William James",
+        "link":  "https://standardebooks.org/ebooks/william-james/pragmatism/downloads/william-james_pragmatism.epub",
+        "portada_id":  705323,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/705323-L.jpg"
+    },
+    {
+        "titulo":  "Heart of Darkness",
+        "autor":  "Joseph Conrad",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=13nJ2vW4tdFcoPvbC_Uwb6nWPO3yu5pUb",
+        "portada_id":  12307847,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/12307847-L.jpg"
+    },
+    {
+        "titulo":  "Lord Jim",
+        "autor":  "Joseph Conrad",
+        "link":  "https://standardebooks.org/ebooks/joseph-conrad/lord-jim/downloads/joseph-conrad_lord-jim.epub",
+        "portada_id":  8236295,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8236295-L.jpg"
+    },
+    {
+        "titulo":  "The House of Mirth",
+        "autor":  "Edith Wharton",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1dgRMT1ZLD-VjSfv-hXebcckM6P5pNUaV",
+        "portada_id":  9329539,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/9329539-L.jpg"
+    },
+    {
+        "titulo":  "The Age of Innocence",
+        "autor":  "Edith Wharton",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1Zlhjuh_yNepywo8x0xCIuy5wqo11gomV",
+        "portada_id":  11196262,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/11196262-L.jpg"
+    },
+    {
+        "titulo":  "Howards End",
+        "autor":  "E.M. Forster",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1uBcDj7fSonS3b-xbquSZy7Jp2gbII3vS",
+        "portada_id":  8235207,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8235207-L.jpg"
+    },
+    {
+        "titulo":  "A Passage to India",
+        "autor":  "E.M. Forster",
+        "link":  "https://standardebooks.org/ebooks/e-m-forster/a-passage-to-india/downloads/e-m-forster_a-passage-to-india.epub",
+        "portada_id":  1921995,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/1921995-L.jpg"
+    },
+    {
+        "titulo":  "Dubliners",
+        "autor":  "James Joyce",
+        "link":  "https://standardebooks.org/ebooks/james-joyce/dubliners/downloads/james-joyce_dubliners.epub",
+        "portada_id":  8216412,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8216412-L.jpg"
+    },
+    {
+        "titulo":  "A Portrait of the Artist as a Young Man",
+        "autor":  "James Joyce",
+        "link":  "https://standardebooks.org/ebooks/james-joyce/a-portrait-of-the-artist-as-a-young-man/downloads/james-joyce_a-portrait-of-the-artist-as-a-young-man.epub",
+        "portada_id":  9328410,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/9328410-L.jpg"
+    },
+    {
+        "titulo":  "Ulysses",
+        "autor":  "James Joyce",
+        "link":  "https://standardebooks.org/ebooks/james-joyce/ulysses/downloads/james-joyce_ulysses.epub",
+        "portada_id":  13136548,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/13136548-L.jpg"
+    },
+    {
+        "titulo":  "Mrs Dalloway",
+        "autor":  "Virginia Woolf",
+        "link":  "https://standardebooks.org/ebooks/virginia-woolf/mrs-dalloway/downloads/virginia-woolf_mrs-dalloway.epub",
+        "portada_id":  6397580,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/6397580-L.jpg"
+    },
+    {
+        "titulo":  "To the Lighthouse",
+        "autor":  "Virginia Woolf",
+        "link":  "https://standardebooks.org/ebooks/virginia-woolf/to-the-lighthouse/downloads/virginia-woolf_to-the-lighthouse.epub",
+        "portada_id":  8231846,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8231846-L.jpg"
+    },
+    {
+        "titulo":  "Sons and Lovers",
+        "autor":  "D.H. Lawrence",
+        "link":  "https://standardebooks.org/ebooks/d-h-lawrence/sons-and-lovers/downloads/d-h-lawrence_sons-and-lovers.epub",
+        "portada_id":  8246175,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8246175-L.jpg"
+    },
+    {
+        "titulo":  "Women in Love",
+        "autor":  "D.H. Lawrence",
+        "link":  "https://standardebooks.org/ebooks/d-h-lawrence/women-in-love/downloads/d-h-lawrence_women-in-love.epub",
+        "portada_id":  13140934,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/13140934-L.jpg"
+    },
+    {
+        "titulo":  "The Great Gatsby",
+        "autor":  "F. Scott Fitzgerald",
+        "link":  "https://standardebooks.org/ebooks/f-scott-fitzgerald/the-great-gatsby/downloads/f-scott-fitzgerald_the-great-gatsby.epub",
+        "portada_id":  10590366,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/10590366-L.jpg"
+    },
+    {
+        "titulo":  "The Sun Also Rises",
+        "autor":  "Ernest Hemingway",
+        "link":  "https://standardebooks.org/ebooks/ernest-hemingway/the-sun-also-rises/downloads/ernest-hemingway_the-sun-also-rises.epub",
+        "portada_id":  78741,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/78741-L.jpg"
+    },
+    {
+        "titulo":  "A Farewell to Arms",
+        "autor":  "Ernest Hemingway",
+        "link":  "https://standardebooks.org/ebooks/ernest-hemingway/a-farewell-to-arms/downloads/ernest-hemingway_a-farewell-to-arms.epub",
+        "portada_id":  7226599,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/7226599-L.jpg"
+    },
+    {
+        "titulo":  "The Sound and the Fury",
+        "autor":  "William Faulkner",
+        "link":  "https://standardebooks.org/ebooks/william-faulkner/the-sound-and-the-fury/downloads/william-faulkner_the-sound-and-the-fury.epub",
+        "portada_id":  8292212,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8292212-L.jpg"
+    },
+    {
+        "titulo":  "As I Lay Dying",
+        "autor":  "William Faulkner",
+        "link":  "https://standardebooks.org/ebooks/william-faulkner/as-i-lay-dying/downloads/william-faulkner_as-i-lay-dying.epub",
+        "portada_id":  9327716,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/9327716-L.jpg"
+    },
+    {
+        "titulo":  "My Ántonia",
+        "autor":  "Willa Cather",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1i2Bv5KRKgf5lFJ8QyKlmaPc9a9tlQl1a",
+        "portada_id":  7653766,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/7653766-L.jpg"
+    },
+    {
+        "titulo":  "The Maltese Falcon",
+        "autor":  "Dashiell Hammett",
+        "link":  "https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon/downloads/dashiell-hammett_the-maltese-falcon.epub",
+        "portada_id":  998587,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/998587-L.jpg"
+    },
+    {
+        "titulo":  "Of Human Bondage",
+        "autor":  "W. Somerset Maugham",
+        "link":  "https://standardebooks.org/ebooks/w-somerset-maugham/of-human-bondage/downloads/w-somerset-maugham_of-human-bondage.epub",
+        "portada_id":  5277723,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/5277723-L.jpg"
+    },
+    {
+        "titulo":  "Manhattan Transfer",
+        "autor":  "John Dos Passos",
+        "link":  "https://standardebooks.org/ebooks/john-dos-passos/manhattan-transfer/downloads/john-dos-passos_manhattan-transfer.epub",
+        "portada_id":  394352,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/394352-L.jpg"
+    },
+    {
+        "titulo":  "An American Tragedy",
+        "autor":  "Theodore Dreiser",
+        "link":  "https://standardebooks.org/ebooks/theodore-dreiser/an-american-tragedy/downloads/theodore-dreiser_an-american-tragedy.epub",
+        "portada_id":  12728401,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/12728401-L.jpg"
+    },
+    {
+        "titulo":  "Main Street",
+        "autor":  "Sinclair Lewis",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1bC8HRodEn6rSotkMR2Oat7LULDJZnwKZ",
+        "portada_id":  8244638,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8244638-L.jpg"
+    },
+    {
+        "titulo":  "Poetry",
+        "autor":  "T.S. Eliot",
+        "link":  "https://standardebooks.org/ebooks/t-s-eliot/poetry/downloads/t-s-eliot_poetry.epub",
+        "portada_id":  376525,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/376525-L.jpg"
+    },
+    {
+        "titulo":  "Poetry",
+        "autor":  "W.B. Yeats",
+        "link":  "https://standardebooks.org/ebooks/w-b-yeats/poetry/downloads/w-b-yeats_poetry.epub",
+        "portada_id":  252912,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/252912-L.jpg"
+    },
+    {
+        "titulo":  "Songs of Innocence and of Experience",
+        "autor":  "William Blake",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1vqBA8oIJD_J8zJWO6_j_bBylWkvSBp_P",
+        "portada_id":  441955,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/441955-L.jpg"
+    },
+    {
+        "titulo":  "Complete Poems",
+        "autor":  "Emily Dickinson",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1DVrPgV9GAtv1MCDJJruKCVpMTZ0O8LCU",
+        "portada_id":  376578,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/376578-L.jpg"
+    },
+    {
+        "titulo":  "The Egoist",
+        "autor":  "George Meredith",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1Tra38lVBo-laElZQl1iBfk9Vx8Xb5n4T",
+        "portada_id":  6495193,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/6495193-L.jpg"
+    },
+    {
+        "titulo":  "The Life of Samuel Johnson",
+        "autor":  "James Boswell",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1sizx095QQFdrJqW3di3HuCs7WxuE0Awt",
+        "portada_id":  9070489,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/9070489-L.jpg"
+    },
+    {
+        "titulo":  "The Renaissance",
+        "autor":  "Walter Pater",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1EGX39AYCJvjUgki87-E_3cRTpnINgEz-",
+        "portada_id":  1803572,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/1803572-L.jpg"
+    },
+    {
+        "titulo":  "Tales of Soldiers and Civilians",
+        "autor":  "Ambrose Bierce",
+        "link":  "https://drive.google.com/uc?export=download\u0026id=1n_gYL7D1l4MGT_2QMTemLevJTMspFPCP",
+        "portada_id":  12670963,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/12670963-L.jpg"
+    },
+    {
+        "titulo":  "Brave New World",
+        "autor":  "Aldous Huxley",
+        "link":  "https://www.fadedpage.com/showbook.php?pid=20160545",
+        "portada_id":  8231823,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/8231823-L.jpg"
+    },
+    {
+        "titulo":  "Of Mice and Men",
+        "autor":  "John Steinbeck",
+        "link":  "https://www.fadedpage.com/showbook.php?pid=20210154",
+        "portada_id":  14319003,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/14319003-L.jpg"
+    },
+    {
+        "titulo":  "Their Eyes Were Watching God",
+        "autor":  "Zora Neale Hurston",
+        "link":  "https://www.fadedpage.com/showbook.php?pid=20200240",
+        "portada_id":  12752055,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/12752055-L.jpg"
+    },
+    {
+        "titulo":  "The Grapes of Wrath",
+        "autor":  "John Steinbeck",
+        "link":  "https://www.fadedpage.com/showbook.php?pid=20220149",
+        "portada_id":  12715902,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/12715902-L.jpg"
+    },
+    {
+        "titulo":  "The Big Sleep",
+        "autor":  "Raymond Chandler",
+        "link":  "https://www.fadedpage.com/showbook.php?pid=20201159",
+        "portada_id":  7268475,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/7268475-L.jpg"
+    },
+    {
+        "titulo":  "The Heart Is a Lonely Hunter",
+        "autor":  "Carson McCullers",
+        "link":  "https://www.fadedpage.com/showbook.php?pid=20190862",
+        "portada_id":  394799,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/394799-L.jpg"
+    },
+    {
+        "titulo":  "Animal Farm",
+        "autor":  "George Orwell",
+        "link":  "https://www.fadedpage.com/showbook.php?pid=201410E7",
+        "portada_id":  11261770,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/11261770-L.jpg"
+    },
+    {
+        "titulo":  "Nineteen Eighty-Four",
+        "autor":  "George Orwell",
+        "link":  "https://www.fadedpage.com/showbook.php?pid=20120511",
+        "portada_id":  9267242,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/9267242-L.jpg"
+    },
+    {
+        "titulo":  "Brideshead Revisited",
+        "autor":  "Evelyn Waugh",
+        "link":  "https://www.fadedpage.com/showbook.php?pid=20190176",
+        "portada_id":  2560441,
+        "portada_ol":  "https://covers.openlibrary.org/b/id/2560441-L.jpg"
+    }
+]
