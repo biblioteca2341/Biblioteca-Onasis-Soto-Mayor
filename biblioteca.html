@@ -117,7 +117,7 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
   <div class="hi">
     <div class="htitle"><h1>Biblioteca Virtual</h1><p>Onasis Soto Mayor</p></div>
     <div class="swrap"><input type="text" id="si" placeholder="Buscar por título o autor..."></div>
-    <div class="hcount">Mostrando <span id="cs">1066</span> de <span id="ct">1066</span></div>
+    <div class="hcount">Mostrando <span id="cs">1066</span> de <span id="ct">...</span></div>
     <button class="hhelp" onclick="openHelp()">¿Cómo se usa la biblioteca?</button>
     <button class="lang-btn" id="lang-btn" onclick="toggleLang()" title="Cambiar idioma / Switch language">🇪🇸 Español</button>
     
@@ -21810,7 +21810,8 @@ document.getElementById('si').addEventListener('input',af);
 ['fp','fn','fo','fmt'].forEach(id=>document.getElementById(id).addEventListener('change',af));
 document.getElementById('srt').addEventListener('change',render);
 function actualizarContador(){
-  document.getElementById('ct').textContent=BD.length;
+  const n=BD.filter(b=>curLang==='en'?b.idioma==='en':b.idioma!=='en').length;
+  document.getElementById('ct').textContent=n;
 }
 actualizarContador();
 restoreFromURL();
