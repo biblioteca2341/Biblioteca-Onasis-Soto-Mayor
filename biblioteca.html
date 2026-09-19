@@ -21793,7 +21793,7 @@ function om(i){
   document.getElementById('mo').classList.add('open');
 }
 function cmd(){document.getElementById('mo').classList.remove('open');document.getElementById('dl-msg').style.display='none';}
-function dl(a,e){e.preventDefault();const href=a.href;if(href&&!href.endsWith('#')){const t=document.createElement('a');t.href=href;t.target='_blank';t.rel='noopener';t.click();}cmd();const toast=document.getElementById('dl-toast');toast.style.opacity='0';requestAnimationFrame(()=>{requestAnimationFrame(()=>{toast.style.transition='opacity .3s';toast.style.opacity='1';setTimeout(()=>{toast.style.opacity='0';},2500);});});}
+function dl(a,e){e.preventDefault();const href=a.href;cmd();const toast=document.getElementById('dl-toast');toast.style.transition='none';toast.style.opacity='1';setTimeout(()=>{toast.style.transition='opacity .5s';toast.style.opacity='0';},2500);if(href&&!href.endsWith('#')){window.open(href,'_blank','noopener');}}
 function openHelp(){document.getElementById('mo-help').classList.add('open')}
 function closeHelp(){document.getElementById('mo-help').classList.remove('open')}
 function openFaq(){document.getElementById('mo-faq').classList.add('open')}
