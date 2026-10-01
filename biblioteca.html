@@ -14,11 +14,11 @@ header{background:#3D6B3D;color:#f0f8f0;padding:1.25rem 1.5rem;position:sticky;t
 .hi{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
 .htitle h1{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#f0f8f0}
 .htitle p{display:none}
-.swrap{flex:1;min-width:180px;position:relative}
+.swrap{flex:0 1 320px;min-width:180px;position:relative}
 #si{width:100%;padding:.6rem 1rem;border:2px solid #6A9A5A;border-radius:8px;background:#ffffff;color:#1a3000;font-family:'Inter',sans-serif;font-size:.88rem;outline:none;transition:border-color .2s,background .2s}
 #si::placeholder{color:#7aaa7a}
 #si:focus{border-color:#3D6B3D;background:#f0f8f0}
-.hcount{font-size:.78rem;color:#f0f8f0;white-space:nowrap;font-weight:600}
+.hcount{font-size:.78rem;color:#f0f8f0;white-space:nowrap;font-weight:600;margin-left:auto}
 .hcount span{color:#c8f0c8;font-weight:700}
 .hhelp{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#f0f8f0;font-family:'Inter',sans-serif;font-size:.8rem;cursor:pointer;border-radius:6px;padding:.4rem .75rem;white-space:nowrap;transition:background .2s}
 .hhelp:hover{background:rgba(255,255,255,.2)}
@@ -99,10 +99,11 @@ header{background:#3D6B3D;color:#f0f8f0;padding:1.25rem 1.5rem;position:sticky;t
 /* Botón selector de idioma */
 .lang-btn{display:flex;align-items:center;gap:.3rem;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);color:#f0f8f0;font-family:'Inter',sans-serif;font-size:.8rem;font-weight:600;cursor:pointer;border-radius:6px;padding:.4rem .75rem;white-space:nowrap;transition:background .2s;letter-spacing:.04em}
 .lang-btn:hover{background:rgba(255,255,255,.25)}
-.lang-btn.active-en{background:#2a5a8a;border-color:#4a8aba}
+.lang-group{display:flex;gap:.25rem}
+.lang-btn.on{background:#f0f8f0;color:#3D6B3D;border-color:#f0f8f0}
 
 footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border-top:1px solid var(--border);margin-top:2rem}
-@media(max-width:768px){.layout{grid-template-columns:1fr}.filters{position:static}.grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr))}header{padding:.9rem 1rem}.hi{gap:.7rem}}
+@media(max-width:768px){.swrap{flex:1 1 200px}.hcount{margin-left:0}.layout{grid-template-columns:1fr}.filters{position:static}.grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr))}header{padding:.9rem 1rem}.hi{gap:.7rem}}
 
 .stamp{position:absolute;bottom:7px;left:7px;font-family:'Courier Prime',monospace;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#2a1a08;border:1.5px solid rgba(42,26,8,.5);border-radius:2px;padding:3px 6px;transform:rotate(-2.5deg);white-space:nowrap;background:rgba(255,255,255,.7)}
 .stamp.nf{color:#3a5020;border-color:#3a5020}
@@ -120,7 +121,7 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
     <div class="swrap"><input type="text" id="si" placeholder="Buscar por título o autor..."></div>
     <div class="hcount">Mostrando <span id="cs">1066</span> de <span id="ct">...</span></div>
     <button class="hhelp" onclick="openHelp()">¿Cómo se usa la biblioteca?</button>
-    <button class="lang-btn" id="lang-btn" onclick="toggleLang()" title="Cambiar idioma / Switch language">🇪🇸 Español</button>
+    <div class="lang-group" id="lang-group"><button class="lang-btn on" data-lang="all" onclick="setLang('all')">Todos</button><button class="lang-btn" data-lang="es" onclick="setLang('es')">🇪🇸 Español</button><button class="lang-btn" data-lang="en" onclick="setLang('en')">🇺🇸 Inglés</button></div>
     
   </div>
 </header>
@@ -161,7 +162,7 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
     <button class="breset" onclick="reset()">Limpiar filtros</button>
   </aside>
   <main>
-    <div class="bh"><h2><strong id="cl">1066</strong> libros</h2><div style="display:flex;align-items:center;gap:.3rem;margin-left:auto"><label class="sort-label">Ordenar por:</label><select class="ss" id="srt" onchange="render()"><option value="nd">Más reciente</option><option value="a">Autor A–Z</option><option value="na">Más antiguo</option></select></div></div>
+    <div class="bh"><h2><strong id="cl">1066</strong> libros</h2><div style="display:flex;align-items:center;gap:.3rem;margin-left:auto"><label class="sort-label">Ordenar por:</label><select class="ss" id="srt" onchange="render()"><option value="nd">Publicación: más reciente</option><option value="na">Publicación: más antigua</option><option value="cr">Carga: más reciente</option><option value="ca">Carga: más antigua</option><option value="a">Autor A–Z</option></select></div></div>
     <div class="grid" id="grid"><div class="card " onclick="om(272)">
       <div class="cover">
         <img src="./biblioteca_files/0014658436-L.jpg" loading="lazy" alt="La hora de los depredadores">
@@ -21559,39 +21560,35 @@ const EPUB_FORMATS=['EPUB','MOBI','AZW','AZW3'];
 function gc(n){return NC[n]||DC}
 
 let curFic='';
-let curLang='es'; // 'es' = español (default), 'en' = inglés
+let curLang='all'; // 'all' = todos (default), 'es' = español, 'en' = inglés
 
 const PERIODOS_ES=['','Antigüedad','Medieval','Siglo XVI','Siglo XVII','Siglo XVIII','Siglo XIX','Primera mitad s. XX','Segunda mitad s. XX','Siglo XXI'];
 const PERIODOS_EN=['','Medieval','Renacimiento','Siglo XVIII','Siglo XIX','Primera mitad s. XX'];
+const PERIODOS_ALL=['','Antigüedad','Medieval','Renacimiento','Siglo XVI','Siglo XVII','Siglo XVIII','Siglo XIX','Primera mitad s. XX','Segunda mitad s. XX','Siglo XXI'];
 
-function toggleLang(){
-  curLang = curLang==='es' ? 'en' : 'es';
-  const btn = document.getElementById('lang-btn');
-  if(curLang==='en'){
-    btn.textContent='🇺🇸 English';
-    btn.classList.add('active-en');
-    // Reconstruir períodos en inglés
-    document.getElementById('fp').innerHTML = PERIODOS_EN.map((p,i)=>i===0?'<option value="">All</option>':`<option>${p}</option>`).join('');
-    // Ocultar filtros que no aplican a inglés
-    document.getElementById('fg-temas').style.display='none';
-    curFic='';
-    document.getElementById('btn-fic').classList.remove('active');
-    document.getElementById('btn-nof').classList.remove('active');
-    document.getElementById('fg-forma').style.display='none';
-  } else {
-    btn.textContent='🇪🇸 Español';
-    btn.classList.remove('active-en');
-    // Reconstruir períodos en español
-    document.getElementById('fp').innerHTML = PERIODOS_ES.map((p,i)=>i===0?'<option value="">Todo</option>':`<option>${p}</option>`).join('');
-    // Restaurar filtros de forma y temas
-    document.getElementById('fg-temas').style.display='none';
-    document.getElementById('fg-forma').style.display='none';
-  }
-  document.getElementById('fp').value='';
-  document.getElementById('fn').value='';
+function esIngles(b){const i=(b.idioma||'').toLowerCase();return i==='en'||i==='inglés'||i==='ingles'||i==='english';}
+
+function aplicarLangUI(l){
+  curLang=l;
+  document.querySelectorAll('#lang-group .lang-btn').forEach(btn=>btn.classList.toggle('on',btn.dataset.lang===l));
+  const lista=l==='en'?PERIODOS_EN:l==='es'?PERIODOS_ES:PERIODOS_ALL;
+  const todo=l==='en'?'All':'Todo';
+  const fp=document.getElementById('fp');
+  const prev=fp.value;
+  fp.innerHTML=lista.map((p,i)=>i===0?`<option value="">${todo}</option>`:`<option>${p}</option>`).join('');
+  fp.value=lista.includes(prev)?prev:'';
+}
+function setLang(l){
+  if(l===curLang)return;
+  aplicarLangUI(l);
+  // reiniciar categoría/género/temática (cambia el universo de libros)
+  curFic='';
+  document.getElementById('btn-fic').classList.remove('active');
+  document.getElementById('btn-nof').classList.remove('active');
+  document.getElementById('fg-forma').style.display='none';
+  document.getElementById('fg-temas').style.display='none';
   document.getElementById('fo').value='';
-  document.getElementById('fmt').value='';
-  document.getElementById('si').value='';
+  document.getElementById('ftema').value='';
   actualizarContador();
   af();
 }
@@ -21639,6 +21636,7 @@ function agrupar(arr){
   return [...map.values()];
 }
 const BD=agrupar(B);
+BD.forEach((b,i)=>{b._ord=i;}); // posición en el catálogo = proxy de orden de carga
 let fil=[...BD];
 
 function norm(t){return(t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
@@ -21653,7 +21651,7 @@ function syncURL(){
   const ftema=document.getElementById('ftema').value;
   const srt=document.getElementById('srt').value;
   if(s)p.set('q',s);
-  if(curLang&&curLang!=='es')p.set('lang',curLang);
+  if(curLang&&curLang!=='all')p.set('lang',curLang);
   if(curFic)p.set('fic',curFic);
   if(fp)p.set('per',fp);
   if(fn)p.set('nac',fn);
@@ -21668,15 +21666,7 @@ function syncURL(){
 function restoreFromURL(){
   const p=new URLSearchParams(location.search);
   const lang=p.get('lang');
-  if(lang&&lang==='en'){
-    curLang='en';
-    const btn=document.getElementById('lang-btn');
-    if(btn){btn.textContent='🇺🇸 English';btn.classList.add('active-en');}
-    const fpEl=document.getElementById('fp');
-    if(fpEl)fpEl.innerHTML=PERIODOS_EN.map((x,i)=>i===0?'<option value="">All</option>':`<option>${x}</option>`).join('');
-    const fgt=document.getElementById('fg-temas');if(fgt)fgt.style.display='none';
-    const fgf=document.getElementById('fg-forma');if(fgf)fgf.style.display='none';
-  }
+  if(lang==='en'||lang==='es')aplicarLangUI(lang);
   const fic=p.get('fic');
   if(fic){
     curFic=fic;
@@ -21710,8 +21700,8 @@ function af(){
   const ftema=document.getElementById('ftema').value;
   fil=BD.filter(b=>{
     // Filtro por idioma activo
-    if(curLang==='en'){if(b.idioma!=='en')return false;}
-    else{if(b.idioma==='en')return false;}
+    if(curLang==='en'){if(!esIngles(b))return false;}
+    else if(curLang==='es'){if(esIngles(b))return false;}
     if(s&&!norm(b.titulo).includes(s)&&!norm(b.autor).includes(s))return false;
     if(curFic){const bfic=b.ficcion===true?'Ficción':b.ficcion===false?'No Ficción':b.ficcion;if(bfic!==curFic)return false;}
     if(fp&&b.periodo!==fp)return false;
@@ -21731,6 +21721,8 @@ function render(){
   const bks=[...fil].sort((a,b)=>{
     if(srt==='a')return a.autor.localeCompare(b.autor,'es');
     if(srt==='nd'){const aa=a.ano||0,bb=b.ano||0;if(!aa&&!bb)return 0;if(!aa)return 1;if(!bb)return -1;return bb-aa;}
+    if(srt==='cr')return b._ord-a._ord;
+    if(srt==='ca')return a._ord-b._ord;
     if(srt==='na'){const aa=a.ano||9999,bb=b.ano||9999;if(aa===9999&&bb===9999)return 0;if(aa===9999)return 1;if(bb===9999)return -1;return aa-bb;}
     return 0;
   });
@@ -21814,11 +21806,11 @@ document.getElementById('si').addEventListener('input',af);
 ['fp','fn','fo','fmt'].forEach(id=>document.getElementById(id).addEventListener('change',af));
 document.getElementById('srt').addEventListener('change',render);
 function actualizarContador(){
-  const n=BD.filter(b=>curLang==='en'?b.idioma==='en':b.idioma!=='en').length;
+  const n=curLang==='en'?BD.filter(esIngles).length:curLang==='es'?BD.filter(b=>!esIngles(b)).length:BD.length;
   document.getElementById('ct').textContent=n;
 }
-actualizarContador();
 restoreFromURL();
+actualizarContador();
 af();
 </script>
 
