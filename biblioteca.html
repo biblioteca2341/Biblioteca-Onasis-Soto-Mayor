@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <!-- saved from url=(0050)file:///C:/Users/GCBA/Downloads/biblioteca_56.html -->
 <html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Excluir de Analytics los navegadores propios: abrir una vez ?nomedir=1 (revertir con ?nomedir=0) -->
+<script>
+(function(){
+  var ID='G-BM6MP91VHE', msg='';
+  try{
+    var p=new URLSearchParams(location.search).get('nomedir');
+    if(p==='1'){localStorage.setItem('bib_nomedir','1');msg='Este navegador ya no se cuenta en Google Analytics.';}
+    else if(p==='0'){localStorage.removeItem('bib_nomedir');msg='Este navegador vuelve a contarse en Google Analytics.';}
+    if(localStorage.getItem('bib_nomedir')==='1'){window['ga-disable-'+ID]=true;}
+  }catch(e){}
+  if(msg){document.addEventListener('DOMContentLoaded',function(){
+    var d=document.createElement('div');d.textContent=msg;
+    d.style.cssText='position:fixed;top:1rem;left:50%;transform:translateX(-50%);background:#2a5020;color:#fff;padding:.7rem 1.2rem;border-radius:10px;font-size:.9rem;z-index:10000;box-shadow:0 4px 16px rgba(0,0,0,.25)';
+    document.body.appendChild(d);setTimeout(function(){d.remove();},5000);
+  });}
+})();
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM6MP91VHE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM6MP91VHE');
+</script>
 
 <meta name="color-scheme" content="light only">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
