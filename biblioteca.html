@@ -21558,8 +21558,15 @@ footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--text3);border
     <div class="mb" id="mb"></div>
     <div class="mf">
       <a href="#" id="md" target="_blank" class="bdll" onclick="dl(this,event)">📥 Descargar libro</a>
-      <div id="dl-msg" style="display:none;text-align:center;margin-top:.8rem;font-size:.88rem;color:#2a5020;font-weight:600;padding:.5rem;background:#e8f5e2;border-radius:8px;">✅ Libro descargado.</div>
+      <div id="dl-msg" style="display:none;text-align:center;margin-top:.8rem;font-size:.88rem;color:#2a5020;font-weight:600;padding:.5rem;background:#e8f5e2;border-radius:8px;">✅ Descarga iniciada.</div>
       <div id="drive-note" style="margin-top:.7rem;padding:.6rem .9rem;background:#fff8e1;border-left:3px solid #f9a825;border-radius:6px;font-size:.82rem;color:#5d4037;line-height:1.45;">Si Google Drive te pide confirmación, hacé clic en <strong>Descargar</strong>.</div>
+      <details id="mov-help" style="display:none;margin-top:.7rem;padding:.6rem .9rem;background:#eef5fb;border-left:3px solid #2e75b6;border-radius:6px;font-size:.82rem;color:#1f3a56;line-height:1.5;">
+        <summary style="cursor:pointer;font-weight:700;">📱 ¿No se descarga en tu celular?</summary>
+        <ol style="margin:.5rem 0 0 1.1rem;padding:0;">
+          <li>Tocá <strong>Descargar libro</strong>. Si el celular dice que el archivo no es compatible, o ofrece otro formato, probá con <a id="md-alt" href="#" target="_blank" rel="noopener" style="color:#1f5f99;font-weight:700;">Abrir en Google Drive ↗</a> y desde ahí usá el menú ⋮ → <strong>Descargar</strong>.</li>
+          <li>El archivo queda en la carpeta Descargas con la extensión <strong>.epub</strong>. Abrilo con una app de lectura: Google Play Libros, Kindle, Apple Libros o <a href="https://www.adobe.com/solutions/ebook/digital-editions/download.html" target="_blank" rel="noopener" style="color:#1f5f99;font-weight:700;">Adobe Digital Editions</a>.</li>
+        </ol>
+      </details>
       <div class="calibre-note" id="calibre-note" style="display:none">
         ¿El formato no es compatible con tu dispositivo? 
         <a href="https://calibre-ebook.com/" target="_blank">Calibre</a> es un programa gratuito que te permite convertir archivos entre formatos (EPUB, PDF, MOBI) y leerlos en tu computadora.
@@ -21868,6 +21875,8 @@ function om(i){
   if(b.sinopsis){sinEl.textContent=b.sinopsis;sinEl.style.display='block';}
   else{sinEl.style.display='none';}
   document.getElementById('md').href=b.link||'#';
+  {const _l=b.link||'';const _m=_l.match(/[?&]id=([-\w]{20,})/)||_l.match(/\/d\/([-\w]{20,})/);const _h=document.getElementById('mov-help');
+   if(_m&&/drive\.google\.com/.test(_l)){document.getElementById('md-alt').href='https://drive.google.com/file/d/'+_m[1]+'/view';_h.style.display='block';_h.open=false;}else{_h.style.display='none';}}
   document.getElementById('mb').innerHTML=[
     ['Nacionalidad',(F[b.nacionalidad]||'')+' '+b.nacionalidad],
     ['Tipo',b.ficcion],['Forma',b.forma||'—'],
@@ -21878,21 +21887,28 @@ function om(i){
   document.getElementById('mo').classList.add('open');
 }
 function cmd(){document.getElementById('mo').classList.remove('open');document.getElementById('dl-msg').style.display='none';}
-function dl(a,e){cmd();setTimeout(function(){var toast=document.getElementById('dl-toast');toast.style.transition='none';toast.style.opacity='1';void toast.offsetHeight;setTimeout(function(){toast.style.transition='opacity .5s';toast.style.opacity='0';},2500);},50);}
+function dl(a,e){
+  if(window.matchMedia&&window.matchMedia('(pointer:coarse)').matches){const h=document.getElementById('mov-help');if(h&&h.style.display!=='none')h.open=true;const m=document.getElementById('dl-msg');m.textContent='Descarga iniciada. Si no aparece en tu celular, seguí los pasos de abajo.';m.style.display='block';return;}
+  cmd();setTimeout(function(){var toast=document.getElementById('dl-toast');toast.style.transition='none';toast.style.opacity='1';void toast.offsetHeight;setTimeout(function(){toast.style.transition='opacity .5s';toast.style.opacity='0';},2500);},50);}
 function openHelp(){document.getElementById('mo-help').classList.add('open')}
 function closeHelp(){document.getElementById('mo-help').classList.remove('open')}
 function openFaq(){document.getElementById('mo-faq').classList.add('open')}
 function closeFaq(){document.getElementById('mo-faq').classList.remove('open')}
 document.addEventListener('DOMContentLoaded',function(){if(!localStorage.getItem('bib_visited')){localStorage.setItem('bib_visited','1');setTimeout(openHelp,600)}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){cmd();closeHelp();closeFaq();}});
-function reset(){
+function reset(){ // limpia TODO: búsqueda, desplegables, idioma, categoría/género/temática, Novedades y orden
+  if(curLang!=='all')aplicarLangUI('all');
   document.getElementById('si').value='';document.getElementById('ftema').value='';
   ['fp','fn','fo','fmt'].forEach(id=>document.getElementById(id).value='');
   curFic='';
-  if(curNov){curNov=false;document.getElementById('srt').value=srtPrevNov||'nd';aplicarNovUI();}
+  curNov=false;srtPrevNov='nd';
+  document.getElementById('srt').value='nd';
+  aplicarNovUI();
   document.getElementById('btn-fic').classList.remove('active');
   document.getElementById('btn-nof').classList.remove('active');
   document.getElementById('fg-forma').style.display='none';
+  document.getElementById('fg-temas').style.display='none';
+  actualizarContador();
   af();
 }
 document.getElementById('si').addEventListener('input',af);
@@ -21909,7 +21925,7 @@ af();
 
 
 
-<div id="dl-toast" style="position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#2a5020;color:#fff;padding:.7rem 1.4rem;border-radius:10px;font-size:.88rem;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.25);opacity:0;transition:opacity .3s;pointer-events:none;z-index:9999;">✅ Libro descargado</div>
+<div id="dl-toast" style="position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#2a5020;color:#fff;padding:.7rem 1.4rem;border-radius:10px;font-size:.88rem;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.25);opacity:0;transition:opacity .3s;pointer-events:none;z-index:9999;">✅ Descarga iniciada</div>
 
 <!-- Lista de deseos: envía a Google Form (respuestas en "Me gustaría leer (respuestas)", Drive Biblioteca Virtual). Límite: tres pedidos por día y por navegador. -->
 <div class="ped-ov" id="ped-ov" onclick="if(event.target===this)closePedido()">
